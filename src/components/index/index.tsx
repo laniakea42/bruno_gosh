@@ -165,7 +165,7 @@ const IndexComponent = ({}) => {
 
           <Space height={44} />
 
-          {/* <TabHeading>
+          <TabHeading>
             {catalogTabs.map((item, i, key) => {
               return (
                 <TabItemUI
@@ -188,7 +188,7 @@ const IndexComponent = ({}) => {
                 {item.contents}
               </TabItemBody>
             );
-          })} */}
+          })}
         </Container>
       </Wrapper>
 
