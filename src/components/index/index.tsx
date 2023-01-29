@@ -12,7 +12,6 @@ import {
   CatalogGrid,
   Container,
   FirstBlock,
-  GalleryCol,
   GalleryGrid,
   SocialsRow,
   Wrapper,

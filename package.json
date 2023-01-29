@@ -38,6 +38,7 @@
     "babel-loader": "^8.3.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unused-imports": "^2.0.0",
     "prettier": "2.8.3"
   },
   "plugins": [
