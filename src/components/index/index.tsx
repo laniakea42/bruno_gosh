@@ -6,13 +6,13 @@ import Space from "../../stories/Space";
 import { TabItemBody } from "../../stories/tab-item-body";
 import { TabHeading } from "../../stories/Tab.styled";
 import { TabItemUI } from "../../stories/TabItem.styled";
-// import { DogCard, InfoOnCard } from "../dog-card/dog-card.styled";
+import { DogCard, InfoOnCard } from "../dog-card/dog-card.styled";
 import { All, Boys, Girls, Lils } from "./catalog";
 import {
-  // CatalogGrid,
+  CatalogGrid,
   Container,
   FirstBlock,
-  // GalleryCol,
+  GalleryCol,
   GalleryGrid,
   SocialsRow,
   Wrapper,
@@ -24,16 +24,16 @@ interface catalogProps {
 }
 
 const IndexComponent = ({}) => {
-  // const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(0);
 
-  // const catalogTabs: catalogProps[] = [
-  //   { title: "Все", contents: All },
-  //   { title: "Девочки", contents: Girls },
-  //   { title: "Мальчики", contents: Boys },
-  //   { title: "Щенки", contents: Lils },
-  //   { title: "Породистые", contents: All },
-  //   { title: "Дворняги", contents: Boys },
-  // ];
+  const catalogTabs: catalogProps[] = [
+    { title: "Все", contents: All },
+    { title: "Девочки", contents: Girls },
+    { title: "Мальчики", contents: Boys },
+    { title: "Щенки", contents: Lils },
+    { title: "Породистые", contents: All },
+    { title: "Дворняги", contents: Boys },
+  ];
 
   return (
     <>
