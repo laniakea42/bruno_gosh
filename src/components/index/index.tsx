@@ -166,12 +166,12 @@ const IndexComponent = ({}) => {
           <Space height={44} />
 
           <TabHeading>
-            {catalogTabs.map((item, i, key) => {
+            {catalogTabs.map((item, key) => {
               return (
                 <TabItemUI
                   key={key}
-                  className={i == activeTab ? "tab__item--active" : ""}
-                  onClick={() => setActiveTab(i)}
+                  className={key == activeTab ? "tab__item--active" : ""}
+                  onClick={() => setActiveTab(key)}
                 >
                   {item.title}
                 </TabItemUI>
@@ -179,11 +179,11 @@ const IndexComponent = ({}) => {
             })}
           </TabHeading>
 
-          {catalogTabs.map((item, i, key) => {
+          {catalogTabs.map((item, key) => {
             return (
               <TabItemBody
                 key={key}
-                className={i == activeTab ? "tab__item--active" : ""}
+                className={key == activeTab ? "tab__item--active" : ""}
               >
                 {item.contents}
               </TabItemBody>
