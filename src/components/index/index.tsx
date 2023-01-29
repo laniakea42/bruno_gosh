@@ -6,10 +6,10 @@ import Space from "../../stories/Space";
 import { TabItemBody } from "../../stories/tab-item-body";
 import { TabHeading } from "../../stories/Tab.styled";
 import { TabItemUI } from "../../stories/TabItem.styled";
-import { DogCard, InfoOnCard } from "../dog-card/dog-card.styled";
+// import { DogCard, InfoOnCard } from "../dog-card/dog-card.styled";
 import { All, Boys, Girls, Lils } from "./catalog";
 import {
-  CatalogGrid,
+  // CatalogGrid,
   Container,
   FirstBlock,
   // GalleryCol,

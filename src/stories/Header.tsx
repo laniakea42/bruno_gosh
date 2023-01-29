@@ -6,6 +6,7 @@ import { MenuItem } from "./menu-item";
 import { NavUI } from "./nav.styled";
 import { WrapperUI } from "./wrapper.styled";
 import cn from "classnames";
+import Link from "next/link";
 
 const Header = () => {
   const [filled, setFilled] = React.useState(false);
@@ -30,7 +31,7 @@ const Header = () => {
   return (
     <HeaderUI className={cn(filled ? "filled" : "")}>
       <WrapperUI>
-        <a href="/">
+        <Link href="/">
           <svg
             width="87"
             height="48"
@@ -48,7 +49,7 @@ const Header = () => {
               fill="#3E3B2D"
             />
           </svg>
-        </a>
+        </Link>
 
         <NavUI>
           <MenuItem label="Главная" />
