@@ -24,16 +24,16 @@ interface catalogProps {
 }
 
 const IndexComponent = ({}) => {
-  const [activeTab, setActiveTab] = useState(0);
+  // const [activeTab, setActiveTab] = useState(0);
 
-  const catalogTabs: catalogProps[] = [
-    { title: "Все", contents: All },
-    { title: "Девочки", contents: Girls },
-    { title: "Мальчики", contents: Boys },
-    { title: "Щенки", contents: Lils },
-    { title: "Породистые", contents: All },
-    { title: "Дворняги", contents: Boys },
-  ];
+  // const catalogTabs: catalogProps[] = [
+  //   { title: "Все", contents: All },
+  //   { title: "Девочки", contents: Girls },
+  //   { title: "Мальчики", contents: Boys },
+  //   { title: "Щенки", contents: Lils },
+  //   { title: "Породистые", contents: All },
+  //   { title: "Дворняги", contents: Boys },
+  // ];
 
   return (
     <>
@@ -166,7 +166,7 @@ const IndexComponent = ({}) => {
 
           <Space height={44} />
 
-          <TabHeading>
+          {/* <TabHeading>
             {catalogTabs.map((item, i, key) => {
               return (
                 <TabItemUI
@@ -189,7 +189,7 @@ const IndexComponent = ({}) => {
                 {item.contents}
               </TabItemBody>
             );
-          })}
+          })} */}
         </Container>
       </Wrapper>
 

@@ -1,3 +1,23 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next", "prettier", "eslint:recommended"],
+  "plugins": ["prettier", "unused-imports", "simple-import-sort"],
+  "rules": {
+    "react/no-children-prop": "off",
+    "@next/next/no-document-import-in-page": "off",
+    "@next/next/no-css-tags": "off",
+    "@next/next/no-script-in-document": "off",
+    "@next/next/no-img-element": "off",
+    "prettier/prettier": "warn",
+    "unused-imports/no-unused-imports": "error",
+    "react/display-name": "off",
+    "no-unused-vars": "off",
+    "no-restricted-imports": ["error", { "patterns": ["@/../*"] }],
+    "simple-import-sort/imports": "warn",
+    // "no-warning-comments": ["warn", { "terms": ["todo", "fixme"] }],
+    "no-console": ["error", { "allow": ["error", "debug", "warn"] }]
+  },
+  "globals": {
+    "globalThis": false,
+    "JSX": true
+  }
 }

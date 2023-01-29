@@ -4,6 +4,9 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  eslint: {
+    dirs: ["assets", "components", "contexts", "hooks", "pages", "util"],
+  },
 };
 
 module.exports = nextConfig;
