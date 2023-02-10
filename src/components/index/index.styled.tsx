@@ -171,3 +171,60 @@ export const GalleryGrid = styled.div`
     }
   }
 `;
+
+export const Subtitle = styled.p`
+  width: 830px;
+  max-width: 100%;
+`;
+
+export const VetGrid = styled.div`
+  display: grid;
+  grid-template-columns: 546px 1fr;
+  gap: 6px;
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: translateX(-46px);
+  }
+  .cts__action {
+    margin-top: 27px;
+  }
+  .vet {
+    &__container {
+      position: relative;
+    }
+    &__picture {
+      position: absolute;
+      top: 20px;
+      left: 300px;
+    }
+  }
+`;
+
+export const CtsRow = styled.div`
+  display: flex;
+  align-items: center;
+  width: 255px;
+  max-width: 100%;
+  gap: 26px;
+  img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    object-position: center;
+  }
+  .cts {
+    &__location {
+      width: 22px;
+      height: 27px;
+    }
+    &__phone {
+      font-weight: 600;
+    }
+  }
+
+  & + & {
+    margin-top: 25px;
+  }
+`;

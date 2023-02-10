@@ -1,15 +1,16 @@
-import IndexComponent from "./components/index";
-import GlobalStyle from "./styles/global";
 import { ThemeProvider } from "styled-components";
+
 import { baseTheme } from "@/styles/theme";
 
+import IndexComponent from "./components/index";
 
 function App() {
   return (
-    <ThemeProvider theme={{ baseTheme }}>
-      <GlobalStyle />
-      <IndexComponent />
-    </ThemeProvider>
+    <>
+      <ThemeProvider theme={{ baseTheme }}>
+        <IndexComponent />
+      </ThemeProvider>
+    </>
   );
 }
 

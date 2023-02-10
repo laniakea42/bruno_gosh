@@ -1,19 +1,20 @@
-// import { Wrapper } from "./index.styled";
-import React, { ReactNode, useState } from "react";
+import React, { useState } from "react";
+
 import { Button } from "../../stories/Button";
 import Header from "../../stories/Header";
 import Space from "../../stories/Space";
-import { TabItemBody } from "../../stories/tab-item-body";
 import { TabHeading } from "../../stories/Tab.styled";
+import { TabItemBody } from "../../stories/tab-item-body";
 import { TabItemUI } from "../../stories/TabItem.styled";
-import { DogCard, InfoOnCard } from "../dog-card/dog-card.styled";
 import { All, Boys, Girls, Lils } from "./catalog";
 import {
-  CatalogGrid,
   Container,
+  CtsRow,
   FirstBlock,
   GalleryGrid,
   SocialsRow,
+  Subtitle,
+  VetGrid,
   Wrapper,
 } from "./index.styled";
 
@@ -22,7 +23,7 @@ interface catalogProps {
   contents: JSX.Element;
 }
 
-const IndexComponent = ({}) => {
+const IndexComponent = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   const catalogTabs: catalogProps[] = [
@@ -230,7 +231,6 @@ const IndexComponent = ({}) => {
 
           <Space height={40} />
           <Button size="medium" primary label="Показать еще" cn="centered" />
-          <Space height={130} />
         </Container>
 
         <img
@@ -254,6 +254,68 @@ const IndexComponent = ({}) => {
           className="gallery__decoration gallery__decoration--ballright"
         />
       </Wrapper>
+
+      <Space height={130} />
+
+      <Wrapper>
+        <Container>
+          <h2 className="title">
+            <span className="title__span title__span--iconed">
+              <svg
+                width="47"
+                height="47"
+                viewBox="0 0 47 47"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="paw"
+              >
+                <path
+                  d="M46.2934 19.4015L25.0953 0.53074C24.1532 -0.176913 22.9755 -0.176913 22.0334 0.53074L0.835298 19.4015C-0.106839 20.345 -0.342373 21.7604 0.599764 22.7039C1.5419 23.6474 2.95511 23.8833 3.89724 22.9398L4.60384 21.9962V44.6412C4.60384 46.0565 5.54598 47 6.95919 47H39.934C41.3472 47 42.2893 46.0565 42.2893 44.6412V21.9962L42.9959 22.7039C43.938 23.6474 45.3513 23.4115 46.2934 22.468C47.2355 21.7604 47.2355 20.1092 46.2934 19.4015ZM28.1573 30.4881H25.8019V32.8469C25.8019 34.2622 24.8598 35.2058 23.4466 35.2058C22.0334 35.2058 21.0912 34.2622 21.0912 32.8469V30.4881H18.7359C17.3227 30.4881 16.3806 29.5445 16.3806 28.1292C16.3806 26.7139 17.3227 25.7704 18.7359 25.7704H21.0912V23.4115C21.0912 21.9962 22.0334 21.0527 23.4466 21.0527C24.8598 21.0527 25.8019 21.9962 25.8019 23.4115V25.7704H28.1573C29.5705 25.7704 30.5126 26.7139 30.5126 28.1292C30.5126 29.5445 29.5705 30.4881 28.1573 30.4881Z"
+                  fill="#B5CFDD"
+                />
+              </svg>
+              Ветеринарная клиника
+            </span>
+            у нас работают специалисты, готовые помочь вашим питомцам в любое
+            время
+          </h2>
+
+          <Space height={26} />
+          <Subtitle>
+            Врачи работают круглосуточно и без выходных. Оказываем ветеринарную
+            помощь, живые или онлайн-консультации.
+          </Subtitle>
+          <Space height={47} />
+
+          <VetGrid>
+            <img src="./images/vet-dogen.png" alt="" />
+            <div className="vet__container">
+              <CtsRow>
+                <img
+                  src="./images/location-mark.svg"
+                  alt=""
+                  className="cts__location"
+                />
+                <p>Москва, Таллинский проезд, 99</p>
+              </CtsRow>
+              <CtsRow>
+                <img src="./images/phone.svg" alt="" />
+                <p>
+                  <a href="tel:83890503553" className="cts__phone">
+                    8 (389) 050-35-53
+                  </a>
+                </p>
+              </CtsRow>
+
+              <Button size="medium" label="Звонок" cn="cts__action" />
+
+              <img src="./images/vet.svg" alt="" className="vet__picture" />
+            </div>
+          </VetGrid>
+        </Container>
+      </Wrapper>
+
+      <Space height={130} />
     </>
   );
 };
